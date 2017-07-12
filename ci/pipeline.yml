@@ -3,7 +3,7 @@ resources:
 - name: attendee-service-source
   type: git
   source:
-    uri: https://github.com/ritceynoah/pcf-attendee-service-code
+    uri: https://github.com/ritceynoah/pcf-attendee-service-code.git
     branch: master
 - name: deploy-attendee-service
   type: cf
@@ -46,4 +46,4 @@ jobs:
   - task: smoke_test
     file: attendee-service-source/ci/tasks/smoke-test.yml
     params:
-      ATTENDEE_SERVICE_URL: http://ci.logimethodslabs.com:8080/teams/noah-team/pipelines/attendee-service/
+      ATTENDEE_SERVICE_URL: http://attendee-service-semisynthetic-rose.cfapps.io
