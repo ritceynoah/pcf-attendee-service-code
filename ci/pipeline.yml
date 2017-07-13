@@ -46,4 +46,4 @@ jobs:
   - task: smoke_test
     file: attendee-service-source/ci/tasks/smoke-test.yml
     params:
-      ATTENDEE_SERVICE_URL: http://attendee-service-semisynthetic-rose.cfapps.io
+      ATTENDEE_SERVICE_URL: http://attendee-service-stratospheric-laggen.cfapps.io
